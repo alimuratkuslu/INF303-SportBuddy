@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Activity/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0aXZpdHkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Customer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -26,6 +30,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Location/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Shared/Error.cshtml]

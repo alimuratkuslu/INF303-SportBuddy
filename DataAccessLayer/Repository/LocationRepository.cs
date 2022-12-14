@@ -2,37 +2,46 @@
 using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
+using Microsoft.EntityFrameworkCore;
 
 namespace DataAccessLayer.Repository
 {
     public class LocationRepository : ILocationDal
     {
 
-        private readonly Context context;
+        private readonly Context _context;
+
+        public LocationRepository(Context context)
+        {
+            _context = context;
+        }
 
         public void DeleteLocation(Location location)
         {
-            throw new NotImplementedException();
+            _context.Remove(location);
+            _context.SaveChanges();
         }
 
         public List<Location> GetAllLocations()
         {
-            throw new NotImplementedException();
+            return _context.location.ToList();
         }
 
         public Location GetLocationById(int id)
         {
-            throw new NotImplementedException();
+            return _context.location.Find(id);
         }
 
         public void SaveLocation(Location location)
         {
-            throw new NotImplementedException();
+            _context.Add(location);
+            _context.SaveChanges();
         }
 
         public void UpdateLocation(Location location)
         {
-            throw new NotImplementedException();
+            _context.Update(location);
+            _context.SaveChanges();
         }
     }
 }

@@ -10,29 +10,37 @@ namespace DataAccessLayer.Repository
 
         private readonly Context _context;
 
+        public AdminRepository(Context context)
+        {
+            _context = context;
+        }
+
         public void DeleteAdmin(Admin admin)
         {
-            throw new NotImplementedException();
+            _context.Remove(admin);
+            _context.SaveChanges();
         }
 
         public Admin GetAdminById(int id)
         {
-            throw new NotImplementedException();
+            return _context.admin.Find(id);
         }
 
         public List<Admin> GetAllAdmins()
         {
-            throw new NotImplementedException();
+            return _context.admin.ToList();
         }
 
         public void SaveAdmin(Admin admin)
         {
-            throw new NotImplementedException();
+            _context.Add(admin);
+            _context.SaveChanges();
         }
 
         public void UpdateAdmin(Admin admin)
         {
-            throw new NotImplementedException();
+            _context.Update(admin);
+            _context.SaveChanges();
         }
     }
 }

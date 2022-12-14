@@ -1,0 +1,70 @@
+﻿@using EntityLayer.Concrete
+@model List<Location>
+
+@{
+    Layout = null;
+}
+
+<style>
+    .table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+        .table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .table th,
+        .table td {
+            padding: 12px 15px;
+        }
+
+        .table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+            .table tbody tr:nth-last-of-type(n+2) {
+                background-color: #f3f3f3;
+            }
+
+            .table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+</style>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Location Id</th>
+            <th>City</th>
+            <th>District</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>rating</th>
+            <th>Working Hours</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.location_id</td>
+            <td>@item.city</td>
+            <td>@item.district</td>
+            <td>@item.type</td>
+            <td>@item.name</td>
+            <td>@item.rating</td>
+            <td>@item.workhours</td>
+            <td>@item.status</td>
+        </tr>
+    }
+</table>
+

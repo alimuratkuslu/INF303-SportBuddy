@@ -8,31 +8,39 @@ namespace DataAccessLayer.Repository
     public class ActivityRepository : IActivityDal
     {
 
-        private readonly Context context;
+        private readonly Context _context;
+
+        public ActivityRepository(Context context)
+        {
+            _context = context;
+        }
 
         public void DeleteActivity(Activity activity)
         {
-            throw new NotImplementedException();
+            _context.Remove(activity);
+            _context.SaveChanges();
         }
 
         public Activity GetActivityById(int id)
         {
-            throw new NotImplementedException();
+            return _context.activity.Find(id);
         }
 
         public List<Activity> GetAllActivites()
         {
-            throw new NotImplementedException();
+            return _context.activity.ToList();
         }
 
         public void SaveActivity(Activity activity)
         {
-            throw new NotImplementedException();
+            _context.Add(activity);
+            _context.SaveChanges();
         }
 
         public void UpdateActivity(Activity activity)
         {
-            throw new NotImplementedException();
+            _context.Update(activity);
+            _context.SaveChanges();
         }
     }
 }

@@ -1,0 +1,76 @@
+﻿@using EntityLayer.Concrete
+@model List<Activity>
+
+@{
+    Layout = null;
+}
+
+<style>
+    .table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+        .table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .table th,
+        .table td {
+            padding: 12px 15px;
+        }
+
+        .table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+            .table tbody tr:nth-last-of-type(n+2) {
+                background-color: #f3f3f3;
+            }
+
+            .table tbody tr:last-of-type {
+                border-bottom: 2px solid #009879;
+            }
+</style>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Activity Id</th>
+            <th>User 1</th>
+            <th>User 2</th>
+            <th>Time</th>
+            <th>Location Id</th>
+            <th>Duration</th>
+            <th>Rating Location</th>
+            <th>Rating Buddy</th>
+            <th>Rating Time</th>
+            <th>Comment</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.activity_id</td>
+            <td>@item.user1_id</td>
+            <td>@item.user2_id</td>
+            <td>@item.time</td>
+            <td>@item.location_id</td>
+            <td>@item.duration</td>
+            <td>@item.rating_location</td>
+            <td>@item.rating_buddy</td>
+            <td>@item.rating_time</td>
+            <td>@item.comment</td>
+            <td>@item.status</td>
+        </tr>
+    }
+</table>
+

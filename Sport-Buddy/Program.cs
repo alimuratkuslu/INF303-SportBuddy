@@ -15,7 +15,11 @@ builder.Services.AddDbContext<Context>(
 );
 
 builder.Services.AddScoped<ICustomerDal, CustomerRepository>();
+builder.Services.AddScoped<ILocationDal, LocationRepository>();
+builder.Services.AddScoped<IActivityDal, ActivityRepository>();
 builder.Services.AddScoped<ICustomerService, CustomerManager>();
+builder.Services.AddScoped<ILocationService, LocationManager>();
+builder.Services.AddScoped<IActivityService, ActivityManager>();
 
 /*
 builder.Services.AddDbContext<Context>(options =>
