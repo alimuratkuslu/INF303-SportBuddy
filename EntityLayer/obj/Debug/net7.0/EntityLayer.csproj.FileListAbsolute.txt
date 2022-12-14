@@ -1,0 +1,12 @@
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/bin/Debug/net7.0/EntityLayer.deps.json
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/bin/Debug/net7.0/EntityLayer.dll
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/bin/Debug/net7.0/EntityLayer.pdb
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/obj/Debug/net7.0/EntityLayer.csproj.AssemblyReference.cache
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/obj/Debug/net7.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/obj/Debug/net7.0/EntityLayer.AssemblyInfoInputs.cache
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/obj/Debug/net7.0/EntityLayer.AssemblyInfo.cs
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/obj/Debug/net7.0/EntityLayer.csproj.CoreCompileInputs.cache
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/obj/Debug/net7.0/EntityLayer.dll
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/obj/Debug/net7.0/refint/EntityLayer.dll
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/obj/Debug/net7.0/EntityLayer.pdb
+/Users/alimuratkuslu/Projects/Sport-Buddy/EntityLayer/obj/Debug/net7.0/ref/EntityLayer.dll

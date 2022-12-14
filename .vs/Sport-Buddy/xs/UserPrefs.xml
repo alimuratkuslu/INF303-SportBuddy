@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{6FBD8E06-5AC4-4900-9CC7-609EA0BBD106}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sport-Buddy/Views/Customer/Index.cshtml">
+    <Files>
+      <File FileName="BusinessLayer/Concrete/CustomerManager.cs" Line="37" Column="10" />
+      <File FileName="Sport-Buddy/Controllers/CustomerController.cs" Line="18" Column="48" />
+      <File FileName="DataAccessLayer/Repository/CustomerRepository.cs" Line="26" Column="1" />
+      <File FileName="DataAccessLayer/Concrete/Context.cs" Line="23" Column="33" />
+      <File FileName="Sport-Buddy/Views/Customer/Index.cshtml" Line="47" Column="14" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Sport-Buddy" expanded="True">
+            <Node name="BusinessLayer" expanded="True" />
+            <Node name="DataAccessLayer" expanded="True" />
+            <Node name="EntityLayer" expanded="True" />
+            <Node name="Sport-Buddy" expanded="True">
+              <Node name="Views" expanded="True">
+                <Node name="Customer" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Sport-Buddy PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.CoreLayer FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
