@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
+using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Sport_Buddy.Controllers
@@ -24,6 +25,39 @@ namespace Sport_Buddy.Controllers
             return View(values);
         }
 
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ViewResult Create(Customer customer)
+        {
+            customerService.SaveCustomer(customer);
+            return View();
+        }
+
+        public IActionResult Delete(int id)
+        {
+            var customer = customerService.GetById(id);
+            customerService.DeleteCustomer(customer);
+
+            return RedirectToAction("Index");
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var customer = customerService.GetById(id);
+            return View(customer);
+        }
+
+        public IActionResult Edit(Customer customer)
+        {
+
+            customerService.UpdateCustomer(customer);
+            return RedirectToAction("Index");
+        }
     }
 }
 

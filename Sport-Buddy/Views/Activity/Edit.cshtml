@@ -1,0 +1,58 @@
+﻿@using EntityLayer.Concrete
+@model EntityLayer.Concrete.Activity
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Edit Activity";
+}
+
+<br />
+
+
+@using (Html.BeginForm())
+{
+    <div class="container">
+        <h2>Edit Activity</h2>
+
+        <div class="form-group">
+            Id: @Html.TextBoxFor(x => x.activity_id, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            User 1: @Html.TextBoxFor(x => x.user1_id, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            User 2: @Html.TextBoxFor(x => x.user2_id, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Time: @Html.TextBoxFor(x => x.time, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Location: @Html.TextBoxFor(x => x.location_id, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Duration: @Html.TextBoxFor(x => x.duration, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Location Rating: @Html.TextBoxFor(x => x.rating_location, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Buddy Rating: @Html.TextBoxFor(x => x.rating_buddy, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Time Rating: @Html.TextBoxFor(x => x.rating_time, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Comment: @Html.TextBoxFor(x => x.comment, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Status: @Html.TextBoxFor(x => x.status, new { @class = "form-control" })
+        </div>
+        
+        <br />
+
+        <div class="form-group">
+            <button class="btn btn-success">Edit</button>
+        </div>
+
+    </div>
+}

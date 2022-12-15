@@ -16,8 +16,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Activity/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0aXZpdHkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Activity/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0aXZpdHkvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Activity/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0aXZpdHkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Activity/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWN0aXZpdHkvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Customer/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Customer/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ3VzdG9tZXIvRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Customer/Index.cshtml]
@@ -30,6 +54,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Location/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Location/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Location/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9jYXRpb24vRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/alimuratkuslu/Projects/Sport-Buddy/Sport-Buddy/Views/Location/Index.cshtml]

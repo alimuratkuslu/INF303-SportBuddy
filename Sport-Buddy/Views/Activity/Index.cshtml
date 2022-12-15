@@ -2,7 +2,8 @@
 @model List<Activity>
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Activity List";
 }
 
 <style>
@@ -39,6 +40,10 @@
             }
 </style>
 
+<br />
+<h2>List of Activities</h2>
+<a class='btn btn-primary btn-sm' href='/Activity/Create'>New Activity</a>
+
 <table class="table">
     <thead>
         <tr>
@@ -46,13 +51,14 @@
             <th>User 1</th>
             <th>User 2</th>
             <th>Time</th>
-            <th>Location Id</th>
+            <th>Location</th>
             <th>Duration</th>
             <th>Rating Location</th>
             <th>Rating Buddy</th>
             <th>Rating Time</th>
             <th>Comment</th>
             <th>Status</th>
+            <th>Actions</th>
         </tr>
     </thead>
 
@@ -70,6 +76,11 @@
             <td>@item.rating_time</td>
             <td>@item.comment</td>
             <td>@item.status</td>
+            <td>
+                <a class="btn btn-primary btn-sm" href="/Activity/Edit/@item.activity_id">Edit</a>
+                <a class="btn btn-danger btn-sm" href="/Activity/Delete/@item.activity_id"
+                   onclick="return confirm('Are you sure you want to delete this item')">Delete</a>
+            </td>
         </tr>
     }
 </table>

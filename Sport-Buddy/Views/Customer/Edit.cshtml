@@ -1,0 +1,46 @@
+﻿@using EntityLayer.Concrete
+@model EntityLayer.Concrete.Customer
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Edit Customer";
+}
+
+<br />
+
+
+@using (Html.BeginForm())
+{
+    <div class="container">
+        <h2>Edit Customer</h2>
+
+        <div class="form-group">
+            Id: @Html.TextBoxFor(x => x.id, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Name: @Html.TextBoxFor(x => x.name, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Surname: @Html.TextBoxFor(x => x.surname, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Email: @Html.TextBoxFor(x => x.email, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Phone: @Html.TextBoxFor(x => x.phone, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Address: @Html.TextBoxFor(x => x.address, new { @class = "form-control" })
+        </div>
+        <div class="form-group">
+            Birth Date: @Html.TextBoxFor(x => x.birth_date, new { @class = "form-control" })
+        </div>
+
+        <br />
+
+        <div class="form-group">
+            <button class="btn btn-success">Edit</button>
+        </div>
+
+    </div>
+}

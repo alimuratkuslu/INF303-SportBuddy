@@ -7,6 +7,8 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int location_id { get; set; }
+
+        
         public string city { get; set; }
         public string district { get; set; }
         public string type { get; set; }
@@ -14,6 +16,8 @@ namespace EntityLayer.Concrete
         public int rating { get; set; }
         public string workhours { get; set; }
         public string status { get; set; }
+
+        public Activity Activity { get; set; }
 
     }
 }

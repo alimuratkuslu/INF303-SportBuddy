@@ -28,7 +28,7 @@ namespace DataAccessLayer.Repository
 
         public Customer GetCustomerById(int id)
         {
-            return _context.customer.Find(id);
+            return _context.customer.Find(id);  
         }
 
         public void SaveCustomer(Customer customer)

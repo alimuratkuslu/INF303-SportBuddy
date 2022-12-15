@@ -15,6 +15,8 @@ namespace EntityLayer.Concrete
         public string address { get; set; }
         public DateOnly birth_date { get; set; }
 
+        
+
     }
 }
 

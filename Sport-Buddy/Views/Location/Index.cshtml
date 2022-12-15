@@ -2,7 +2,8 @@
 @model List<Location>
 
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Location List";
 }
 
 <style>
@@ -39,6 +40,10 @@
             }
 </style>
 
+<br />
+<h2>List of Locations</h2>
+<a class='btn btn-primary btn-sm' href='/Location/Create'>New Location</a>
+
 <table class="table">
     <thead>
         <tr>
@@ -50,6 +55,7 @@
             <th>rating</th>
             <th>Working Hours</th>
             <th>Status</th>
+            <th>Actions</th>
         </tr>
     </thead>
 
@@ -64,6 +70,12 @@
             <td>@item.rating</td>
             <td>@item.workhours</td>
             <td>@item.status</td>
+
+            <td>
+                <a class="btn btn-primary btn-sm" href="/Location/Edit/@item.location_id">Edit</a>
+                <a class="btn btn-danger btn-sm" href="/Location/Delete/@item.location_id"
+                   onclick="return confirm('Are you sure you want to delete this item')">Delete</a>
+            </td>
         </tr>
     }
 </table>

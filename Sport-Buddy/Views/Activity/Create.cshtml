@@ -1,0 +1,87 @@
+﻿@using EntityLayer.Concrete
+@model List<Activity>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Create New Activity";
+}
+
+<br />
+<h2>New Activity</h2>
+
+<form method="post" asp-action="Create">
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Id</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="activity_id" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">User 1</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="user1_id" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">User 2</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="user2_id" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Time</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="time" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Location</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="location_id" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Duration</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="duration" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Location Rating</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="rating_location" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Buddy Rating</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="rating_buddy" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Time Rating</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="rating_time" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Comment</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="comment" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label class="col-sm-3 col-form-label">Status</label>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" name="status" value="" />
+        </div>
+    </div>
+    <div class="row mb-3">
+        <div class="offset-sm-3 col-sm-3 d-grid">
+            <button type="submit" value="Add Customer" class="btn btn-primary">Submit</button>
+        </div>
+        <div class="col-sm-3 d-grid">
+            <a class="btn btn-outline-primary" href="/" role="button">Cancel</a>
+        </div>
+    </div>
+</form>
