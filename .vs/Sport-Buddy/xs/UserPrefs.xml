@@ -1,20 +1,30 @@
 ﻿<Properties StartupConfiguration="{6FBD8E06-5AC4-4900-9CC7-609EA0BBD106}|https">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Sport-Buddy PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.CoreLayer FirstBuild="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sport-Buddy/Views/Login/Profile.cshtml">
+    <Files>
+      <File FileName="Sport-Buddy/Views/Login/Profile.cshtml" Line="124" Column="8" />
+      <File FileName="Sport-Buddy/Views/Customer/Index.cshtml" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Sport-Buddy" expanded="True">
             <Node name="EntityLayer" expanded="True">
-              <Node name="Concrete" expanded="True" />
+              <Node name="Concrete" expanded="True">
+                <Node name="Customer.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="Sport-Buddy" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Activity" expanded="True" />
                 <Node name="Customer" expanded="True" />
-                <Node name="Location" expanded="True">
-                  <Node name="Edit.cshtml" selected="True" />
-                </Node>
+                <Node name="Login" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -22,12 +32,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Sport-Buddy PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.CoreLayer FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
 </Properties>

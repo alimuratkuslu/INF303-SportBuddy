@@ -1,0 +1,23 @@
+﻿<h2>Login Page</h2>
+
+
+
+@ViewBag.msg
+<div class="login-agileits-top">
+    <form method="post" asp-controller="Login" asp-action="Login">
+        <p>Username</p>
+        <input type="text" class="username" name="username" required="" />
+        <p>Password</p>
+        <input type="password" class="password" name="password" required="" />
+        
+        </br>
+        </br>
+
+        <label class="anim">
+            <input type="checkbox" class="checkbox">
+            <span> Remember me </span>
+        </label>
+        <br />
+        <input type="submit" value="Login">
+    </form>
+</div>

@@ -9,7 +9,7 @@ namespace DataAccessLayer.Concrete
 
         public Context(DbContextOptions<Context> options) : base(options)
         {
-
+            AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
