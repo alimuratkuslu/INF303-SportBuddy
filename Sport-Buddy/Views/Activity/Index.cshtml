@@ -66,10 +66,10 @@
     {
         <tr>
             <td>@item.activity_id</td>
-            <td>@item.user1_id</td>
-            <td>@item.user2_id</td>
+            <td>@Html.DisplayFor(modelItem => item.user1.name) @Html.DisplayFor(modelItem => item.user1.surname)</td>
+            <td>@Html.DisplayFor(modelItem => item.user2.name) @Html.DisplayFor(modelItem => item.user2.surname)</td>
             <td>@item.time</td>
-            <td>@item.location_id</td>
+            <td>@Html.DisplayFor(modelItem => item.Location.city)-@Html.DisplayFor(modelItem => item.Location.district)-@Html.DisplayFor(modelItem => item.Location.name)</td>
             <td>@item.duration</td>
             <td>@item.rating_location</td>
             <td>@item.rating_buddy</td>

@@ -20,10 +20,71 @@ namespace DataAccessLayer.Concrete
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+
+
+            // 1 Activity = 2 Customers
+
+            modelBuilder.Entity<Activity>()
+                .HasOne(m => m.user1)
+                .WithMany(t => t.Main_Activity)
+                .HasForeignKey(m => m.user1_id)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Activity>()
+                .HasOne(m => m.user2)
+                .WithMany(t => t.Buddy_Activity)
+                .HasForeignKey(m => m.user2_id)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Activity>()
+                .HasOne(m => m.Location)
+                .WithMany(t => t.Activity)
+                .HasForeignKey(m => m.location_id)
+                .OnDelete(DeleteBehavior.Cascade);
+
+
+            /*
+            modelBuilder.Entity<Activity>(entity =>
+            {
+                entity.HasOne(d => d.user1)
+                .WithMany(p => p.Activity)
+                .HasForeignKey(d => d.user1_id)
+                .HasConstraintName("fk_user1_activity");
+
+                entity.HasOne(d => d.Location)
+                .WithMany(p => p.Activity)
+                .HasForeignKey(d => d.location_id)
+                .HasConstraintName("fk_location_activity");
+
+            });
+
+            
+            modelBuilder.Entity<Activity>(entity =>
+            {
+                entity.HasOne(d => d.user2)
+                .WithMany(p => p.Activity)
+                .HasForeignKey(d => d.user2_id)
+                .HasConstraintName("fk_user2_activity");
+            });
+            */
+
+
+            modelBuilder.Entity<Customer>()
+            .Property(f => f.id)
+            .ValueGeneratedOnAdd()
+            .UseIdentityColumn();
+
             modelBuilder.Entity<Location>()
-                .HasOne(x => x.Activity)
-                .WithOne(y => y.Location)
-                .HasForeignKey<Location>(z => z.location_id);
+            .Property(f => f.location_id)
+            .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Activity>()
+            .Property(f => f.activity_id)
+            .ValueGeneratedOnAdd();
+
+            modelBuilder.Entity<Activity>()
+                .Property(f => f.status)
+                .HasDefaultValue("Pending");
         }
         
 

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BusinessLayer.Abstract;
+using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Sport_Buddy.Controllers
 {
@@ -13,15 +15,26 @@ namespace Sport_Buddy.Controllers
 
         private readonly IActivityService activityService;
 
-        public ActivityController(IActivityService activityService)
+        private readonly Context _context;
+
+        public ActivityController(IActivityService activityService, Context context)
         {
             this.activityService = activityService;
+            _context = context;
         }
 
         public IActionResult Index()
         {
+            var list = _context.activity
+                .Include(u => u.user1)
+                .Include(u => u.user2)
+                .Include(u => u.Location)
+                .ToList();
+            
             var values = activityService.GetAllActivities();
-            return View(values);
+
+            return View(list);
+            
         }
 
         public ViewResult Create()

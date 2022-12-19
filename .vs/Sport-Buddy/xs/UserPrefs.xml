@@ -1,30 +1,33 @@
 ﻿<Properties StartupConfiguration="{6FBD8E06-5AC4-4900-9CC7-609EA0BBD106}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Sport-Buddy PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.ItemProperties.CoreLayer FirstBuild="True" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sport-Buddy/Views/Login/Profile.cshtml">
+  <MonoDevelop.Ide.ItemProperties.CoreLayer FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sport-Buddy/Views/Activity/Index.cshtml">
     <Files>
-      <File FileName="Sport-Buddy/Views/Login/Profile.cshtml" Line="124" Column="8" />
-      <File FileName="Sport-Buddy/Views/Customer/Index.cshtml" Line="1" Column="1" />
+      <File FileName="Sport-Buddy/Controllers/ActivityController.cs" Line="29" Column="39" />
+      <File FileName="Sport-Buddy/Views/Activity/Index.cshtml" Line="72" Column="121" />
+      <File FileName="EntityLayer/Concrete/Activity.cs" Line="37" Column="39" />
+      <File FileName="DataAccessLayer/Concrete/Context.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Sport-Buddy" expanded="True">
-            <Node name="EntityLayer" expanded="True">
+            <Node name="DataAccessLayer" expanded="True">
               <Node name="Concrete" expanded="True">
-                <Node name="Customer.cs" selected="True" />
+                <Node name="Context.cs" selected="True" />
               </Node>
+              <Node name="Repository" expanded="True" />
+            </Node>
+            <Node name="EntityLayer" expanded="True">
+              <Node name="Concrete" expanded="True" />
             </Node>
             <Node name="Sport-Buddy" expanded="True">
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
+                <Node name="Activity" expanded="True" />
                 <Node name="Customer" expanded="True" />
-                <Node name="Login" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -32,5 +35,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Sport-Buddy PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

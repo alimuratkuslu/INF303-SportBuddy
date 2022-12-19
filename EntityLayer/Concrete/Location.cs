@@ -1,11 +1,13 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EntityLayer.Concrete
 {
     public class Location
     {
-        [Key]
+        [Key, Column(Order = 0)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int location_id { get; set; }
 
         
@@ -17,7 +19,7 @@ namespace EntityLayer.Concrete
         public string workhours { get; set; }
         public string status { get; set; }
 
-        public Activity Activity { get; set; }
+        public virtual ICollection<Activity> Activity { get; set; }
 
     }
 }
