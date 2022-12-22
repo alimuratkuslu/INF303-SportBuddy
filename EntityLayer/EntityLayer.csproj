@@ -8,8 +8,22 @@
 
   <ItemGroup>
     <None Remove="Concrete\" />
+    <None Remove="NUnit" />
+    <None Remove="NUnit3TestAdapter" />
+    <None Remove="NUnit.ConsoleRunner" />
+    <None Remove="NUnit.Console" />
+    <None Remove="NUnit.Extension.NUnitProjectLoader" />
+    <None Remove="Microsoft.NET.Test.Sdk" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Concrete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.3.1" />
+    <PackageReference Include="NUnit.ConsoleRunner" Version="3.16.0" />
+    <PackageReference Include="NUnit.Console" Version="3.16.0" />
+    <PackageReference Include="NUnit.Extension.NUnitProjectLoader" Version="3.7.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.4.1" />
   </ItemGroup>
 </Project>

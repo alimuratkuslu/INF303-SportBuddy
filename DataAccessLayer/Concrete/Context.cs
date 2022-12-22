@@ -74,14 +74,6 @@ namespace DataAccessLayer.Concrete
             .ValueGeneratedOnAdd()
             .UseIdentityColumn();
 
-            modelBuilder.Entity<Location>()
-            .Property(f => f.location_id)
-            .ValueGeneratedOnAdd();
-
-            modelBuilder.Entity<Activity>()
-            .Property(f => f.activity_id)
-            .ValueGeneratedOnAdd();
-
             modelBuilder.Entity<Activity>()
                 .Property(f => f.status)
                 .HasDefaultValue("Pending");

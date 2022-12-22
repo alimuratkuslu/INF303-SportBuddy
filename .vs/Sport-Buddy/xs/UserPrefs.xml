@@ -1,33 +1,34 @@
 ﻿<Properties StartupConfiguration="{6FBD8E06-5AC4-4900-9CC7-609EA0BBD106}|https">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.CoreLayer FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sport-Buddy/Views/Activity/Index.cshtml">
+  <MonoDevelop.Ide.ItemProperties.Sport-Buddy PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UnitTests/UnitTest1.cs">
     <Files>
-      <File FileName="Sport-Buddy/Controllers/ActivityController.cs" Line="29" Column="39" />
-      <File FileName="Sport-Buddy/Views/Activity/Index.cshtml" Line="72" Column="121" />
-      <File FileName="EntityLayer/Concrete/Activity.cs" Line="37" Column="39" />
-      <File FileName="DataAccessLayer/Concrete/Context.cs" Line="1" Column="1" />
+      <File FileName="UnitTests/UnitTest1.cs" Line="21" Column="11" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Sport-Buddy" expanded="True">
-            <Node name="DataAccessLayer" expanded="True">
-              <Node name="Concrete" expanded="True">
-                <Node name="Context.cs" selected="True" />
-              </Node>
-              <Node name="Repository" expanded="True" />
-            </Node>
-            <Node name="EntityLayer" expanded="True">
+            <Node name="BusinessLayer" expanded="True">
               <Node name="Concrete" expanded="True" />
             </Node>
-            <Node name="Sport-Buddy" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Activity" expanded="True" />
-                <Node name="Customer" expanded="True" />
+            <Node name="UnitTests" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Sport-Buddy" expanded="True">
+            <Node name="UnitTests" expanded="True">
+              <Node name="UnitTests" expanded="True">
+                <Node name="UnitTest1" expanded="True" />
               </Node>
             </Node>
           </Node>
@@ -38,5 +39,4 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.Sport-Buddy PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
